@@ -1,1 +1,831 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Jupiter AI Advisors - AI Solutions. Real Results</title></head><body><h1>Jupiter AI Advisors</h1><p>Homepage uploaded from production website.</p></body></html>
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9XNX87PXVR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9XNX87PXVR');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jupiter AI Advisors - AI Solutions. Real Results</title>
+  <style>
+    :root {
+      --navy: #061f49;
+      --navy-dark: #031735;
+      --teal: #009ec3;
+      --teal-light: #11bfd8;
+      --text: #08234d;
+      --muted: #4e6179;
+      --border: #d7e8ef;
+      --soft: #f6fbfd;
+      --white: #ffffff;
+      --shadow: 0 18px 42px rgba(6, 31, 73, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(215, 232, 239, 0.75);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+      padding: 24px 0;
+    }
+
+    .site-logo img {
+      height: 108px;
+      width: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 38px;
+      color: var(--navy);
+      font-size: 1rem;
+      font-weight: 850;
+    }
+
+    nav a:first-child {
+      color: var(--teal);
+      border-bottom: 3px solid var(--teal);
+      padding-bottom: 9px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      white-space: nowrap;
+    }
+
+    .top-phone {
+      color: var(--navy);
+      font-size: 0.95rem;
+      font-weight: 900;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 24px;
+      font-weight: 900;
+      line-height: 1;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(3, 166, 201, 0.22);
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--teal), var(--teal-light));
+      box-shadow: 0 10px 24px rgba(3,166,201,0.25);
+    }
+
+    .btn-dark {
+      color: white;
+      background: var(--navy);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 610px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.98) 34%, rgba(255,255,255,0.72) 52%, rgba(255,255,255,0.06) 78%),
+        url("https://assets.cdn.filesafe.space/bUi6cRjzBgtecfzkYN4W/media/6a0233a6d11dcc87052ce8e0.png") center right / cover no-repeat;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+      padding: 92px 0;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(3.2rem, 7vw, 5.75rem);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      margin-bottom: 22px;
+    }
+
+    h1 .accent {
+      color: var(--teal);
+    }
+
+    .hero h2 {
+      color: var(--teal);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      color: var(--navy);
+      font-size: 1.13rem;
+      margin-bottom: 32px;
+    }
+
+    /* Benefit Strip */
+    .benefits {
+      background: rgba(245, 251, 253, 0.98);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 34px 0;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .benefit {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 12px 28px;
+      border-right: 1px solid var(--border);
+    }
+
+    .benefit:last-child {
+      border-right: 0;
+    }
+
+    .benefit-icon {
+      color: var(--teal);
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+
+    .benefit h3 {
+      color: var(--navy);
+      font-size: 1.08rem;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .benefit p {
+      color: var(--navy);
+      font-size: 0.92rem;
+    }
+
+    /* Pricing */
+    section {
+      padding: 72px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 36px;
+    }
+
+    .section-header h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .about-section {
+      background: var(--soft);
+      padding-top: 78px;
+      padding-bottom: 40px;
+    }
+
+    .about-card {
+      max-width: 980px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 42px;
+      box-shadow: 0 14px 34px rgba(6,31,73,0.06);
+    }
+
+    .about-card p {
+      color: var(--navy);
+      font-size: 1.04rem;
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+
+    .about-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pricing-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .price-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 34px 32px;
+      box-shadow: 0 14px 36px rgba(6,31,73,0.07);
+    }
+
+    .price-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, var(--teal), var(--teal-light));
+      color: white;
+      font-size: 2rem;
+    }
+
+    .price-card:nth-child(3) .price-icon {
+      background: var(--navy);
+    }
+
+    .price-card h3 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+    }
+
+    .sub {
+      color: var(--navy);
+      font-size: 0.93rem;
+      margin-bottom: 18px;
+    }
+
+    .price {
+      color: var(--navy);
+      font-size: 2.6rem;
+      font-weight: 950;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .price small {
+      color: var(--navy);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .desc {
+      color: var(--navy);
+      font-size: 0.95rem;
+      margin: 8px 0 22px;
+    }
+
+    .price-card ul {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+
+    .price-card li {
+      position: relative;
+      color: var(--navy);
+      font-size: 0.95rem;
+      margin: 10px 0;
+      padding-left: 26px;
+    }
+
+    .price-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-weight: 950;
+    }
+
+    .card-note {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 14px;
+    }
+
+    /* Lower Panels */
+    .lower-panels {
+      max-width: 1000px;
+      margin: 32px auto 0;
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 24px;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(6,31,73,0.06);
+    }
+
+    .panel h3 {
+      text-align: center;
+      color: var(--navy);
+      font-size: 1.25rem;
+      margin-bottom: 18px;
+    }
+
+    .industry-icons {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      text-align: center;
+      color: var(--navy);
+    }
+
+    .industry-icons div {
+      font-size: 2rem;
+    }
+
+    .industry-icons span {
+      display: block;
+      font-size: 0.75rem;
+      margin-top: 8px;
+      color: var(--navy);
+    }
+
+    .contact-card p {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      color: var(--navy);
+      font-size: 1.08rem;
+      font-weight: 700;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-card p:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-icon {
+      color: var(--teal);
+      font-size: 1.65rem;
+      min-width: 42px;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, var(--navy), #041531 70%);
+      color: rgba(255,255,255,0.78);
+      padding: 38px 0 18px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr 0.8fr 1.1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer-logo img {
+      height: 82px;
+      width: auto;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .socials a {
+      text-decoration: none;
+    }
+
+    .socials span {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .copyright {
+      text-align: center;
+      color: rgba(255,255,255,0.74);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 16px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 1050px) {
+      nav { display: none; }
+      .top-phone { display: none; }
+      .benefit-grid,
+      .pricing-grid,
+      .lower-panels,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .benefit {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .benefit:last-child {
+        border-bottom: 0;
+      }
+      .hero {
+        background:
+          linear-gradient(90deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.88) 100%),
+          url("https://assets.cdn.filesafe.space/bUi6cRjzBgtecfzkYN4W/media/6a0233a6d11dcc87052ce8e0.png") center / cover no-repeat;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        padding: 14px 0;
+      }
+      .site-logo img {
+        height: 72px;
+      }
+      .header-actions .btn {
+        padding: 12px 14px;
+        font-size: 0.85rem;
+      }
+      .hero {
+        min-height: auto;
+      }
+      .hero-content {
+        padding: 66px 0;
+      }
+      .industry-icons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="site-logo" aria-label="Jupiter AI Advisors home">
+        <img src="https://assets.cdn.filesafe.space/bUi6cRjzBgtecfzkYN4W/media/6a023371d11dcc87052cdbf2.png" alt="Jupiter AI Advisors" />
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#industries">Industries</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="top-phone" href="tel:15615107822">📞 / 💬 561-510-7822</a>
+        <a class="btn btn-primary" href="tel:15615107822">Book a Demo →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>AI Solutions.<br><span class="accent">Real Results.</span></h1>
+          <h2>Technology + Human Expertise</h2>
+          <p>We help businesses in Jupiter and beyond automate communication, capture more leads, and save time with AI-powered systems.</p>
+          <a class="btn btn-primary" href="tel:15615107822">Book a Demo →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Key benefits">
+      <div class="container benefit-grid">
+        <div class="benefit">
+          <div class="benefit-icon">☎</div>
+          <div>
+            <h3>Never Miss<br>a Lead Again</h3>
+            <p>AI answers calls & texts 24/7.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">⚙</div>
+          <div>
+            <h3>Automate<br>& Save Time</h3>
+            <p>Workflows that run while you focus on growth.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">↗</div>
+          <div>
+            <h3>Convert More<br>& Grow Faster</h3>
+            <p>Turn conversations into loyal customers.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon">👥</div>
+          <div>
+            <h3>Expert Guidance<br>Every Step</h3>
+            <p>Technology + human strategy that scales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Jupiter AI Advisors</h2>
+          <p>Enterprise Experience. Practical AI Solutions.</p>
+        </div>
+
+        <div class="about-card">
+          <p>Jupiter AI Advisors helps businesses modernize communication, automation, and customer engagement using AI-powered technology and real human expertise.</p>
+
+          <p>Based in Jupiter, Florida, we work with businesses looking to improve operations, capture more leads, automate follow-up, and create better customer experiences through practical AI solutions.</p>
+
+          <p>With decades of technology and business experience, Jupiter AI Advisors combines real-world operational knowledge with modern AI-driven systems to help businesses implement solutions that are practical, scalable, and effective.</p>
+
+          <p>Our background includes experience across marketing technology, enterprise software, engineering platforms, and digital business systems — including work with globally recognized brands and technologies such as Autodesk, Siemens, Volvo, Nissan, and Infiniti.</p>
+
+          <p>From SMBs to enterprise organizations, we’ve helped businesses leverage technology, automation, and digital systems to improve operations and drive growth.</p>
+
+          <p>Now, with the power of AI, small and medium-sized businesses have access to tools and automation capabilities that were once only available to large enterprise organizations.</p>
+
+          <p><strong>Our mission is to help businesses apply these modern AI-powered systems in a practical, approachable, and results-driven way — helping them save time, improve communication, automate workflows, and compete more effectively in today’s digital economy.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Founding Client Plan</h2>
+          <p>
+            AI-powered communication, automation, and workflow systems for modern small businesses.
+          </p>
+        </div>
+
+        <div class="pricing-grid" style="grid-template-columns: 1fr; max-width: 720px;">
+
+          <article class="price-card">
+
+            <div class="price-icon">🚀</div>
+
+            <h3>Jupiter AI Advisors</h3>
+
+            <div class="sub">
+              Founding Client Offer
+            </div>
+
+            <div class="price">
+              $97 <small>/month</small>
+            </div>
+
+            <p class="desc">
+              AI-powered business communication and workflow system customized with your company branding.
+            </p>
+
+            <ul>
+              <li>CRM & Pipeline Setup</li>
+              <li>AI Chat Assistant</li>
+              <li>Missed Call Text Back</li>
+              <li>Appointment Scheduling</li>
+              <li>Lead Capture Forms</li>
+              <li>Workflow Automation</li>
+              <li>Email & SMS Follow-Up</li>
+              <li>Website Chat Widget</li>
+              <li>Business Branding Integration</li>
+            </ul>
+
+            <a class="btn btn-primary" href="tel:15615107822">
+              Book a Demo
+            </a>
+
+            <div class="card-note">
+              Founding client onboarding included.<br><br>
+              No long-term contracts.<br>
+              Billed monthly by Jupiter AI Advisors.
+            </div>
+
+          </article>
+
+        </div>
+
+        <div class="lower-panels" id="industries">
+
+          <div class="panel">
+            <h3>Trusted by Local Businesses</h3>
+
+            <div class="industry-icons">
+              <div>⚖<span>Legal</span></div>
+              <div>⚓<span>Marine</span></div>
+              <div>🏠<span>Home Services</span></div>
+              <div>🌿<span>Wellness</span></div>
+              <div>🏢<span>Real Estate</span></div>
+            </div>
+          </div>
+
+          <div class="panel contact-card">
+
+            <p>
+              <span class="contact-icon">📍</span>
+              <span>
+                <a href="https://www.google.com/maps/place/110+Front+St+STE+300,+Jupiter,+FL+33477/@26.9347319,-80.0845849,17z/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                  110 Front St. Suite 300<br>
+                  Jupiter, FL 33477
+
+                </a>
+              </span>
+            </p>
+
+            <p>
+              <span class="contact-icon">📞 / 💬</span>
+              <span>
+                <a href="tel:15615107822">
+                  561-510-7822
+                </a>
+              </span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="container footer-grid">
+
+    <div>
+      <div class="footer-logo">
+        <img src="https://assets.cdn.filesafe.space/bUi6cRjzBgtecfzkYN4W/media/6a02452b939c0e5f20682845.png" alt="Jupiter AI Advisors" />
+      </div>
+
+      <p>AI solutions with a human touch.</p>
+      <p>Helping businesses automate, communicate, and grow.</p>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61589352937855" target="_blank">
+          <span>f</span>
+        </a>
+
+        <a href="https://www.linkedin.com/company/jupiter-ai-advisors/" target="_blank">
+          <span>in</span>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <span>◎</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+
+      <p><a href="#home">Home</a></p>
+      <p><a href="#industries">Industries</a></p>
+      <p><a href="#about">About</a></p>
+
+      <p>
+        <a href="https://www.jupiteraiadvisors.com/privacypolicy">
+          Privacy Policy
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.jupiteraiadvisors.com/termsandconditions">
+          Terms & Conditions
+        </a>
+      </p>
+    </div>
+
+    <div></div>
+
+    <div>
+      <p>
+        📍
+        <a href="https://www.google.com/maps/place/110+Front+St+STE+300,+Jupiter,+FL+33477/@26.9347319,-80.0845849,17z/"
+           target="_blank"
+           rel="noopener noreferrer">
+          110 Front St. Suite 300<br>
+          Jupiter, FL 33477
+        </a>
+      </p>
+
+      <p>
+        📞 / 💬
+        <a href="tel:15615107822">
+          561-510-7822
+        </a>
+      </p>
+
+      <p>
+        ✉
+        <a href="mailto:todd@jupiteraiadvisors.com">
+          todd@jupiteraiadvisors.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="container copyright">
+    © 2026 Jupiter AI Advisors. All rights reserved.
+  </div>
+</footer>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a04bf0b8a1d10639eeb8931" data-source="WEB_USER"></script>
+</body>
+</html>
